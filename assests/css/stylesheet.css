@@ -12,9 +12,32 @@ body{
 
 .jumbotron{
 
-  height: 650px;
+  height: 550px;
   width: 500px;
-  background-color: ;
-margin-left: 270px;
+  background-color:white;
+  margin-left: 270px;
+  opacity: 0.50;
+  filter: alpha(opacity=50);
+  border-style: solid;
+  border-color: #999999;
 
+}
+
+
+.jumbotron:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+
+.main{
+   margin-top: 20px;
+   color:#999999;
+   margin-left: 750px;
+   margin-right: -800px;
+   text-decoration: underline;
+}
+
+.sun{
+  opacity: 0.20;
+  filter: alpha(opacity=20);
 }
