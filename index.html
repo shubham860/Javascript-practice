@@ -18,17 +18,18 @@
 
   <div class= "container" class="col-lg-12">
      <h1 class="main"><b>Weather-Report</b> <img src="..\Javascript-practice\assests\images\sun.png" class="sun" alt="icon"></h1>
-       <div class="jumbotron"  class="col-lg-12">
-               <div class="row">
-                  <div class="col-lg-8">
-                    <input type="text" class="form-control" placeholder="Enter city..." />
-                  </div>
-                  <div class="col-lg-4">
-                    <button type="button" onclick="Report();" class="btn btn-primary" class="bt1">Get Report</button>
-                  </div>
-               </div>
+       <div class="jumbotron"  class="col-lg-12" id="j1">
+         <form onsubmit="event.preventDefault(); Report();">
+
+
+                    <input type="text" class="form-control" placeholder="Enter city..." id="input"/>
+
+
+                    <button type="button" class="btn btn-primary" class="bt1" id="b1" style="width:100%;margin-top:10px;">Get Report</button>
+
+                 </form>
                <div style="margin-top:10px;">
-                  <button onclick="Reset();" class="btn btn-danger" style="width:100%;">Reset</button>
+                  <button onclick="Reset();" class="btn btn-danger" style="width:100%;" id="b2">Reset</button>
                   <br>
                   <h2  id="temp">
                   </h2>
