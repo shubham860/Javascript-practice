@@ -19,7 +19,9 @@ document.getElementById("j1").style.color="white";
 function Report(){
   var location=document.getElementById("input").value;
   if(location=="")
-  {alert("Enter the city name");}
+ {
+   alert("Enter the city name");
+ }
   else{
   var url = 'https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid in (select woeid from geo.places(1) where text="' + location + '")&format=json';
   var obj = new XMLHttpRequest();
@@ -53,14 +55,9 @@ function Report(){
                             document.getElementById("text1").innerHTML = a[1].text;
                             document.getElementById("low1").innerHTML ='Low:' + Math.floor(lo1) +"&deg;C";
 
-      }
+       }
+     }
   }
-}
-  request.open('GET', url, true);
-  request.send();
-  return false;
-}
-
 function Reset(){
    location.reload();
 }
